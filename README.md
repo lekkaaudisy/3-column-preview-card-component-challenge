@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://your-solution-url.com)
+- Solution URL: [GitHub](https://github.com/lekkaaudisy/3-column-preview-card-component-challenge)
 - Live Site URL: [Vercel](https://your-live-site-url.com)
 
 ## My process
