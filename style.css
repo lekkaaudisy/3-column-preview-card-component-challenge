@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 3rem 2.5rem;
+  text-align: left;
+  width: 300px;
+  height: 500px;
+}
+
+.card-sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.card-suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card-luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+h1 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  font-size: 2.375rem;
+  margin: 2rem 0 1rem;
+  color: hsl(0, 0%, 95%);
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 1rem 0;
+  line-height: 1.6;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.button-sedans,
+.button-suvs,
+.button-luxury {
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  padding: 15px 30px;
+  cursor: pointer;
+  margin-top: 4rem;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.button-sedans {
+  color: hsl(31, 77%, 52%);
+}
+
+.button-suvs {
+  color: hsl(184, 100%, 22%);
+}
+
+.button-luxury {
+  color: hsl(179, 100%, 13%);
+}
+
+.button-sedans:hover,
+.button-suvs:hover,
+.button-luxury:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  transform: scale(1);
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 5rem 0;
+  }
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    height: 100%;
+  }
+
+  .button-sedans,
+  .button-suvs,
+  .button-luxury {
+    margin-top: 1rem;
+  }
+}
